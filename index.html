@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ALTERED STATE — streetwear из Санкт-Петербурга. Oversize, acid wash, принты с характером. Reality is optional." />
+  <title>ALTERED STATE — Reality Is Optional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="cursor-crosshair" id="cursor" aria-hidden="true">
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="1"/>
+      <line x1="24" y1="4" x2="24" y2="44" stroke="currentColor" stroke-width="1"/>
+      <line x1="4" y1="24" x2="44" y2="24" stroke="currentColor" stroke-width="1"/>
+      <rect x="21" y="21" width="6" height="6" fill="currentColor"/>
+    </svg>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="header" id="top">
+    <a href="#top" class="logo" aria-label="ALTERED STATE — на главную">
+      <svg class="logo-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="24" y1="4" x2="24" y2="44" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="4" y1="24" x2="44" y2="24" stroke="currentColor" stroke-width="1.5"/>
+        <rect x="21" y="21" width="6" height="6" fill="currentColor"/>
+      </svg>
+      <span class="logo-text">
+        <span class="logo-solid">ALTERED</span>
+        <span class="logo-outline">STATE</span>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="#featured">Коллекция</a>
+      <a href="#works">Работы</a>
+      <a href="#about">О бренде</a>
+      <a href="#order" class="nav-cta">Заказать</a>
+      <span class="live-signal" aria-hidden="true"><span class="live-signal__dot"></span>DROP LIVE</span>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#featured">Коллекция</a>
+    <a href="#works">Работы</a>
+    <a href="#about">О бренде</a>
+    <a href="#order">Заказать</a>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg hero-bg--glitch" id="heroBg" data-brand="altered-state">
+        <img src="assets/altered-state-poster.png" alt="" class="hero-poster" id="heroPoster" />
+        <div class="hero-glitch" aria-hidden="true" id="heroGlitch">
+          <img src="assets/altered-state-poster.png" alt="" id="heroGlitchA" />
+          <img src="assets/altered-state-poster.png" alt="" id="heroGlitchB" />
+        </div>
+        <div class="hero-vignette"></div>
+        <div class="hero-scrim"></div>
+        <div class="hero-scan" aria-hidden="true"></div>
+        <div class="hero-chroma" aria-hidden="true"></div>
+        <div class="hero-grid"></div>
+      </div>
+
+      <div class="hero-content" id="heroContent">
+        <p class="hero-eyebrow" id="heroEyebrow" data-text="SAINT-PETERSBURG / 2026">SAINT-PETERSBURG / 2026</p>
+        <h1 class="hero-title">
+          <span class="title-solid glitch" id="heroTitleSolid" data-text="ALTERED">ALTERED</span>
+          <span class="title-outline glitch" id="heroTitleOutline" data-text="STATE">STATE</span>
+        </h1>
+        <p class="hero-tagline" id="heroTagline">Reality is optional.</p>
+        <p class="hero-desc" id="heroDesc">
+          Oversize streetwear с принтами, которые не просят разрешения.
+          Acid wash, плотный хлопок 240 GSM — каждая вещь как артефакт из другой реальности.
+        </p>
+        <div class="hero-actions">
+          <a href="#works" class="btn btn-primary">Смотреть коллекцию</a>
+          <a href="#order" class="btn btn-ghost" id="heroTelegramBtn">Написать в Telegram</a>
+        </div>
+        <div class="hero-stats" id="heroStats">
+          <div><strong id="heroStat1">240</strong><span id="heroStat1Label">GSM cotton</span></div>
+          <div><strong id="heroStat2">DTG</strong><span id="heroStat2Label">high saturation</span></div>
+          <div><strong id="heroStat3">OS</strong><span id="heroStat3Label">oversize fit</span></div>
+        </div>
+      </div>
+
+      <div class="hero-frame" id="heroFrame" aria-hidden="true">
+        <span class="corner tl"></span>
+        <span class="corner tr"></span>
+        <span class="corner bl"></span>
+        <span class="corner br"></span>
+        <span class="target-lock" id="targetLock">TARGET LOCKED</span>
+      </div>
+
+      <a href="#featured" class="scroll-hint" aria-label="Прокрутить вниз">
+        <span>SCROLL</span>
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" fill="none" stroke-width="1.5"/></svg>
+      </a>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>REALITY IS OPTIONAL — ALTERED STATE — FOCUS SYMBOL — SAINT-PETERSBURG — </span>
+        <span>REALITY IS OPTIONAL — ALTERED STATE — FOCUS SYMBOL — SAINT-PETERSBURG — </span>
+      </div>
+    </div>
+
+    <section class="featured" id="featured">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <h2>Флагманская коллекция</h2>
+        <p>LOGO 05 — Focus Symbol. Принт со спины — центр вселенной бренда.</p>
+      </div>
+
+      <article class="flagship card--hero" data-collection="altered-state" data-product="ALTERED STATE — LOGO 05" data-bg-focus="center 35%">
+        <div class="flagship-visual">
+          <img src="assets/altered-state-poster.png" alt="ALTERED STATE — постер-принт" loading="lazy" />
+          <div class="flagship-badge">POSTER</div>
+        </div>
+        <div class="flagship-info">
+          <h3 class="product-name">
+            <span>ALTERED</span>
+            <span class="outline">STATE</span>
+          </h3>
+          <p class="product-price">от 4 990 ₽</p>
+          <ul class="specs">
+            <li><span>Ткань</span><strong>100% heavy cotton</strong></li>
+            <li><span>Крой</span><strong>Oversize</strong></li>
+            <li><span>Принт</span><strong>DTG, фиолетовый акцент</strong></li>
+            <li><span>Стиль</span><strong>Surveillance / glitch aesthetic</strong></li>
+            <li><span>Линейка</span><strong>ALTERED STATE — флагман</strong></li>
+          </ul>
+          <p class="product-copy">
+            Постер-эдишн: glitch face и типографика ALTERED STATE. Для тех, кто хочет носить постер, а не очередной логотип.
+          </p>
+          <a href="#order" class="btn btn-primary btn-wide" data-product="ALTERED STATE — LOGO 05">Заказать эту модель</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="works" id="works">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <h2>Работы &amp; дропы</h2>
+        <p>Каждый принт — отдельная история. Нажми на карточку — она станет главным экраном.</p>
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-filter="all">Все</button>
+        <button class="filter" data-filter="altered">Altered State</button>
+        <button class="filter" data-filter="collab">Коллабы</button>
+        <button class="filter" data-filter="archive">Архив</button>
+      </div>
+
+      <div class="grid" id="productGrid">
+        <article class="card card--hero is-active" data-category="altered" data-collection="altered-state" data-product="ALTERED STATE — LOGO 05" data-bg-focus="center 32%">
+          <div class="card-img">
+            <img src="assets/altered-state-poster.png" alt="ALTERED STATE poster print" loading="lazy" />
+            <span class="card-tag">Флагман</span>
+          </div>
+          <div class="card-body">
+            <h3>ALTERED STATE</h3>
+            <p>Poster edition / glitch back print</p>
+            <div class="card-footer">
+              <span class="price">4 990 ₽</span>
+              <button class="card-btn" type="button">Заказать</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--hero" data-category="collab" data-collection="absurd-bubble" data-product="АБСУРД — Bubble" data-bg-focus="center 40%">
+          <div class="card-img">
+            <img src="assets/absurd-bubble.png" alt="Футболка АБСУРД bubble print" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>АБСУРД</h3>
+            <p>Bubble graffiti / white on black</p>
+            <div class="card-footer">
+              <span class="price">3 490 ₽</span>
+              <button class="card-btn" type="button">Заказать</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--hero" data-category="collab" data-collection="absurd-metal" data-product="АБСУРД — Metal" data-bg-focus="center 40%">
+          <div class="card-img">
+            <img src="assets/absurd-metal.png" alt="Футболка АБСУРД metalcore print" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>АБСУРД</h3>
+            <p>Metalcore / purple outline</p>
+            <div class="card-footer">
+              <span class="price">3 690 ₽</span>
+              <button class="card-btn" type="button">Заказать</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--hero" data-category="archive" data-collection="last-tram" data-product="ПОСЛЕДНИЙ ТРАМВАЙ" data-bg-focus="center center">
+          <div class="card-img">
+            <img src="assets/last-tram.png" alt="ПОСЛЕДНИЙ ТРАМВАЙ — трамвай, красные фары" loading="lazy" />
+            <span class="card-tag card-tag-red">Limited</span>
+          </div>
+          <div class="card-body">
+            <h3>ПОСЛЕДНИЙ ТРАМВАЙ</h3>
+            <p>Завод: распад север / маршрут: вечность</p>
+            <div class="card-footer">
+              <span class="price">3 990 ₽</span>
+              <button class="card-btn" type="button">Заказать</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--hero" data-category="archive" data-collection="antisex" data-product="антисекс" data-bg-focus="center 45%">
+          <div class="card-img">
+            <img src="assets/antisex.png" alt="антисекс — gothic blackletter" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>антисекс</h3>
+            <p>Шелкография 2+0 / gothic type</p>
+            <div class="card-footer">
+              <span class="price">2 990 ₽</span>
+              <button class="card-btn" type="button">Заказать</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--hero" data-category="collab" data-collection="uv-horror" data-product="ULTRAVIOLENCE — Horror Icons" data-bg-focus="center 35%">
+          <div class="card-img">
+            <img src="assets/ultraviolence-horror.png" alt="ULTRAVIOLENCE horror icons" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>ULTRAVIOLENCE</h3>
+            <p>Horror icons / FROM SAINT-P.</p>
+            <div class="card-footer">
+              <span class="price">3 490 ₽</span>
+              <button class="card-btn" type="button">Заказать</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--hero" data-category="collab" data-collection="uv-skull" data-product="ULTRAVIOLENCE — Skull" data-bg-focus="center 38%">
+          <div class="card-img">
+            <img src="assets/ultraviolence-skull.png" alt="ULTRAVIOLENCE skull print" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>ULTRAVIOLENCE</h3>
+            <p>Skull &amp; hardware / #ERROR404</p>
+            <div class="card-footer">
+              <span class="price">3 490 ₽</span>
+              <button class="card-btn" type="button">Заказать</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--hero" data-category="collab" data-collection="uv-collage" data-product="ULTRAVIOLENCE — Collage" data-bg-focus="center center">
+          <div class="card-img">
+            <img src="assets/ultraviolence-collage.png" alt="ULTRAVIOLENCE street collage" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>ULTRAVIOLENCE</h3>
+            <p>Street tools collage</p>
+            <div class="card-footer">
+              <span class="price">3 290 ₽</span>
+              <button class="card-btn" type="button">Заказать</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--hero" data-category="archive" data-collection="trust-no-one" data-product="TRUST NO ONE" data-bg-focus="center 30%">
+          <div class="card-img">
+            <img src="assets/trust-no-one.png" alt="TRUST NO ONE alley print" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>TRUST NO ONE</h3>
+            <p>Everybody watches you / nobody sees you</p>
+            <div class="card-footer">
+              <span class="price">3 790 ₽</span>
+              <button class="card-btn" type="button">Заказать</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--hero" data-category="archive" data-collection="bezdelnik" data-product="БЕЗДЕЛЬНИК" data-bg-focus="center 42%">
+          <div class="card-img">
+            <img src="assets/bezdelnik.png" alt="БЕЗДЕЛЬНИК — ироничный принт" loading="lazy" />
+            <span class="card-tag">Мем-дроп</span>
+          </div>
+          <div class="card-body">
+            <h3>БЕЗДЕЛЬНИК</h3>
+            <p>Ироничный drop / цветной логотип</p>
+            <div class="card-footer">
+              <span class="price">2 790 ₽</span>
+              <button class="card-btn" type="button">Заказать</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-grid">
+        <div class="about-visual">
+          <img src="assets/altered-state-poster.png" alt="ALTERED STATE — принт" class="about-poster" />
+          <div class="about-crosshair">
+            <svg viewBox="0 0 120 120" fill="none">
+              <circle cx="60" cy="60" r="40" stroke="currentColor" stroke-width="1"/>
+              <line x1="60" y1="10" x2="60" y2="110" stroke="currentColor"/>
+              <line x1="10" y1="60" x2="110" y2="60" stroke="currentColor"/>
+              <rect x="54" y="54" width="12" height="12" fill="currentColor"/>
+            </svg>
+          </div>
+        </div>
+        <div class="about-text">
+          <span class="section-num">03</span>
+          <h2>Система наблюдения<br />которая шьёт вещи</h2>
+          <p>
+            <strong>ALTERED STATE</strong> — петербургский streetwear-бренд на стыке
+            surveillance-эстетики и андеграунда. Фиолетовый как сигнал тревоги,
+            чёрный как экран до загрузки, белый как шум на линии.
+          </p>
+          <p>
+            Мы не делаем «ещё одну футболку». Мы делаем объект — с весом ткани,
+            с характером принта, с ощущением, что реальность вокруг — опциональна.
+          </p>
+          <ul class="about-list">
+            <li>Garment dye / acid wash — уникальная текстура каждой вещи</li>
+            <li>Oversize — свобода движения и визуальный объём</li>
+            <li>Малые тиражи — без масс-маркета</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="order" id="order">
+      <div class="order-panel">
+        <div class="order-copy">
+          <span class="section-num">04</span>
+          <h2>Забрать дроп</h2>
+          <p>
+            Напиши в Telegram — уточним размер, город и способ доставки.
+            Оплата и трек после подтверждения заказа.
+          </p>
+          <p class="order-selected" id="orderSelected">Выбрано: <strong>ALTERED STATE — LOGO 05</strong></p>
+        </div>
+        <form class="order-form" id="orderForm">
+          <label>
+            <span>Модель</span>
+            <input type="text" id="productInput" value="ALTERED STATE — LOGO 05" readonly />
+          </label>
+          <label>
+            <span>Размер</span>
+            <select id="sizeInput" required>
+              <option value="">Выберите размер</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+            </select>
+          </label>
+          <label>
+            <span>Город</span>
+            <input type="text" id="cityInput" placeholder="Санкт-Петербург" required />
+          </label>
+          <button type="submit" class="btn btn-primary btn-wide">
+            Открыть Telegram
+          </button>
+          <p class="form-note" id="telegramFormNote">
+            Укажи свой Telegram в файле <strong>js/config.js</strong> (поле <code>telegram</code>), без @.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#top" class="footer-logo">
+      <svg viewBox="0 0 48 48" fill="none" width="32" height="32">
+        <circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="24" y1="4" x2="24" y2="44" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="4" y1="24" x2="44" y2="24" stroke="currentColor" stroke-width="1.5"/>
+        <rect x="21" y="21" width="6" height="6" fill="currentColor"/>
+      </svg>
+    </a>
+    <p>ALTERED STATE © 2026 — Reality is optional.</p>
+    <p class="footer-city">Saint-Petersburg</p>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-close" type="button" aria-label="Закрыть">&times;</button>
+    <img src="" alt="" id="lightboxImg" />
+    <p id="lightboxCaption"></p>
+  </dialog>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
