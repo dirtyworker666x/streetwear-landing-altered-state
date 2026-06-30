@@ -34,6 +34,10 @@ Static brand landing (Saint Petersburg streetwear): catalog, glitch aesthetic, T
 | `assets/` | Posters, prints, lookbook |
 | `scripts/generate-prints.py` | Print previews (Pillow, optional) |
 
+## Live demo
+
+**https://dirtyworker666x.github.io/streetwear-landing-altered-state/**
+
 ## Preview locally
 
 ```bash
